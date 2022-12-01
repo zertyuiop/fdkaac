@@ -60,7 +60,8 @@
       <AdditionalManifestFiles>..\fdkaac.manifest %(AdditionalManifestFiles)</AdditionalManifestFiles>
     </Manifest>
     <PreBuildEvent>
-      <Command>echo %cd%
+      <Command>pwd
+cd
 copy ..\fdk-aac\libAACdec\include\aacdecoder_lib.h include\fdk-aac\
 copy ..\fdk-aac\libAACenc\include\aacenc_lib.h include\fdk-aac\
 copy ..\fdk-aac\libSYS\include\FDK_Audio.h include\fdk-aac\
